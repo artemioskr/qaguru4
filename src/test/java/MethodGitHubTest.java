@@ -8,6 +8,6 @@ public class MethodGitHubTest {
         steps.openRepository();
         steps.openIssueAndClick();
 
-        steps.findIssueByName("Issue for test");
+        steps.checkIssueIsVisible("Issue for test");
     }
 }

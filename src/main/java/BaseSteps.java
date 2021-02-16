@@ -17,7 +17,7 @@ public class BaseSteps {
     }
 
     @Step("Ищем issue по названию")
-    void findIssueByName(String name) {
+    void checkIssueIsVisible(String name) {
         $("#js-issues-toolbar").parent().shouldHave(text(name));
     }
 }
